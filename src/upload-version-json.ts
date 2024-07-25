@@ -110,6 +110,7 @@ export async function uploadVersionJSON({
       asset,
       assetName,
       downloadUrl,
+      downloadUrls,
     });
     if (downloadUrl) {
       filteredAssets.push({
