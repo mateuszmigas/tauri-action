@@ -135,7 +135,7 @@ export async function uploadVersionJSON({
   const signatureFile = signatureFiles[0];
   if (!signatureFile) {
     console.warn(
-      'Signature not found for the updater JSON. Skipping upload...',
+      '[TEST] Signature not found for the updater JSON. Skipping upload...',
     );
     return;
   }
