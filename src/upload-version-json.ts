@@ -119,6 +119,7 @@ export async function uploadVersionJSON({
     return asset.assetName.endsWith('.sig');
   });
 
+  console.warn('[MM] Uploading version JSON with the following assets:');
   console.log({
     signatureFiles,
     artifacts,
