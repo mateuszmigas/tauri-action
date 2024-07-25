@@ -118,6 +118,11 @@ export async function uploadVersionJSON({
   const signatureFiles = filteredAssets.filter((asset) => {
     return asset.assetName.endsWith('.sig');
   });
+
+  console.log({
+    signatureFiles,
+    artifacts,
+  });
   function signaturePriority(signaturePath: string) {
     const priorities = updaterJsonPreferNsis
       ? ['.nsis.zip.sig', '.exe.sig', '.msi.zip.sig', '.msi.sig']
